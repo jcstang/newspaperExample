@@ -21,13 +21,13 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" rowHeight="90" id="iGR-zE-wMh" customClass="HeadlineTableViewCell" customModule="NewspaperExample" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iGR-zE-wMh" id="bcS-RM-hWX">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iGR-zE-wMh" id="bcS-RM-hWX">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sem-Az-Pfr">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="20" y="11" width="42.5" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -38,21 +38,27 @@
                                                 <constraint firstAttribute="width" constant="150" id="5V8-ob-HhC"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-1c-9p0">
-                                            <rect key="frame" x="20" y="40" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-1c-9p0">
+                                            <rect key="frame" x="20" y="39" width="236" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="RKu-s6-rGC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="top" secondItem="bcS-RM-hWX" secondAttribute="top" constant="39" id="2Ka-au-4QI"/>
+                                        <constraint firstItem="qCC-PO-zUE" firstAttribute="leading" secondItem="5hi-1c-9p0" secondAttribute="trailing" constant="8" symbolic="YES" id="7Md-71-f31"/>
+                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="top" secondItem="sem-Az-Pfr" secondAttribute="bottom" constant="8" symbolic="YES" id="Aam-7z-Q3a"/>
                                         <constraint firstAttribute="bottom" secondItem="qCC-PO-zUE" secondAttribute="bottom" id="Cvc-vb-Bx3"/>
+                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="leading" secondItem="sem-Az-Pfr" secondAttribute="leading" id="KgK-ny-XHc"/>
                                         <constraint firstItem="sem-Az-Pfr" firstAttribute="top" secondItem="bcS-RM-hWX" secondAttribute="topMargin" id="UKp-9r-T6i"/>
                                         <constraint firstItem="sem-Az-Pfr" firstAttribute="leading" secondItem="bcS-RM-hWX" secondAttribute="leadingMargin" id="bBk-CH-isE"/>
-                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="top" secondItem="sem-Az-Pfr" secondAttribute="bottom" constant="8" id="g5I-KI-eTf"/>
+                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="bottom" secondItem="bcS-RM-hWX" secondAttribute="bottomMargin" id="gYz-YP-mLB"/>
                                         <constraint firstItem="qCC-PO-zUE" firstAttribute="top" secondItem="bcS-RM-hWX" secondAttribute="top" id="qdS-uq-96X"/>
                                         <constraint firstAttribute="trailing" secondItem="qCC-PO-zUE" secondAttribute="trailing" id="sae-Bf-XrI"/>
-                                        <constraint firstItem="5hi-1c-9p0" firstAttribute="leading" secondItem="bcS-RM-hWX" secondAttribute="leadingMargin" id="yIc-sO-3ew"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
