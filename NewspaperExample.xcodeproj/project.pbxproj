@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E724A8D22DCC93B004AE07B /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E724A8B22DCC93B004AE07B /* StoryTableViewCell.swift */; };
+		8E724A8E22DCC93B004AE07B /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E724A8C22DCC93B004AE07B /* StoryTableViewCell.xib */; };
 		8EE7DFE922D8C84D00D23D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7DFE822D8C84D00D23D1C /* AppDelegate.swift */; };
 		8EE7DFEE22D8C84D00D23D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7DFEC22D8C84D00D23D1C /* Main.storyboard */; };
 		8EE7DFF022D8C84F00D23D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7DFEF22D8C84F00D23D1C /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E724A8B22DCC93B004AE07B /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		8E724A8C22DCC93B004AE07B /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		8EE7DFE522D8C84D00D23D1C /* NewspaperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewspaperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE7DFE822D8C84D00D23D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE7DFED22D8C84D00D23D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				8EE7DFF122D8C84F00D23D1C /* LaunchScreen.storyboard */,
 				8EE7DFF422D8C84F00D23D1C /* Info.plist */,
 				8EE7DFFA22D8CAA400D23D1C /* StoriesTableViewController.swift */,
+				8E724A8B22DCC93B004AE07B /* StoryTableViewCell.swift */,
+				8E724A8C22DCC93B004AE07B /* StoryTableViewCell.xib */,
 			);
 			path = NewspaperExample;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				8EE7DFF322D8C84F00D23D1C /* LaunchScreen.storyboard in Resources */,
 				8EE7DFF022D8C84F00D23D1C /* Assets.xcassets in Resources */,
 				8EE7DFEE22D8C84D00D23D1C /* Main.storyboard in Resources */,
+				8E724A8E22DCC93B004AE07B /* StoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			files = (
 				8EE7DFFB22D8CAA400D23D1C /* StoriesTableViewController.swift in Sources */,
 				8EE7DFE922D8C84D00D23D1C /* AppDelegate.swift in Sources */,
+				8E724A8D22DCC93B004AE07B /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

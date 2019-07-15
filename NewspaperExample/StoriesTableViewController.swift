@@ -15,6 +15,12 @@ struct Headline {
     var image: String
 }
 
+struct Story {
+    var id: Int
+    var title: String
+    var rText: String
+}
+
 class HeadlineTableViewCell: UITableViewCell {
     @IBOutlet weak var headlineTtitleLabel: UILabel!
     @IBOutlet weak var headlineTextLabel: UILabel!
@@ -27,6 +33,13 @@ class StoriesTableViewController: UITableViewController {
         Headline(id: 1, title: "Lorem Ipsum", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", image: "Apple"),
         Headline(id: 2, title: "Aenean condimentum", text: "Ut eget massa erat. Morbi mauris diam, vulputate at luctus non.", image: "Banana"),
         Headline(id: 3, title: "In ac ante sapien", text: "Aliquam egestas ultricies dapibus. Nam molestie nunc.", image: "Cantaloupe"),
+    ]
+    
+    var stories = [
+        Story(id: 1, title: "First Item", rText: "snake"),
+        Story(id: 2, title: "second Item", rText: "snake"),
+        Story(id: 3, title: "third Item", rText: "snake")
+        
     ]
     
     override func viewDidLoad() {
@@ -53,20 +66,30 @@ class StoriesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath) as! HeadlineTableViewCell
-        
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath) as! HeadlineTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "secondCell", for: indexPath) as! StoryTableViewCell
+        print(cell)
+        print("blah")
         //cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
         //cell.textLabel?.text = headlines[indexPath.row].title
-        let headline = headlines[indexPath.row]
-        cell.headlineTtitleLabel?.text = headline.title
-        cell.headlineTextLabel?.text = headline.text
-        cell.headlineImageView.image = UIImage(named: headline.image)
+        //let headline = headlines[indexPath.row]
+        let story = stories[indexPath.row]
+//        cell.headlineTtitleLabel?.text = headline.title
+//        cell.headlineTextLabel?.text = headline.text
+//        cell.headlineImageView.image = UIImage(named: headline.image)
+        cell.cellTitle?.text = story.title
+        cell.cellRightText?.text = story.rText
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Section \(section)"
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let story = stories[indexPath.row]
+        print(story)
     }
  
 
